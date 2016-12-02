@@ -2,3 +2,5 @@
 
 ./set-bash-profile
 ./set-git
+./set-vim
+

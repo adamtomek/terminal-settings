@@ -10,6 +10,7 @@ This repository contains settings for:
 
 * Bash Profile
 * Git
+* Vim
 
 ## Use
 
@@ -17,6 +18,7 @@ If you want to set only specific setting, you can execute simple command, for ex
 
     ./set-bash-profile
     ./set-git
+    ./set-vim
 
 But if you want to set all settings in one command, you can execute:
 
@@ -27,7 +29,11 @@ But if you want to set all settings in one command, you can execute:
 ### Git
 
 * Git
-* vim
-* vimdiff
+* Vim
+* Vimdiff
 * KDiff3
+
+### Vim
+
+* Vim
 
