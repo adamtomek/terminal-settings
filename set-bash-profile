@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp sources/.bash_profile ~/.bash_profile
