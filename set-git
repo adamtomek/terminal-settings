@@ -1,0 +1,11 @@
+#!/bin/bash
+
+git config --global user.name "Adam Tomek"
+git config --global user.email "and.Adam23@gmail.com"
+git config --global core.editor vim
+git config --global diff.tool vimdiff
+git config --global push.default simple
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global merge.tool kdiff3
+git config --global mergetool.kdiff3.path /Applications/kdiff3.app/Contents/MacOS/kdiff3
+
