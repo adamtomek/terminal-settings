@@ -47,10 +47,12 @@ function prompt {
     local HOSTNAME="\h"
     local WORKING_DIRECTORY="\w"
 
+    local GIT="$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/[\1]/')"
+
     if [ $OK_OR_ERR = 0 ]; then
-        PS1=''$PURPLE'['$TIME']'$GREEN'[OK]'$CYAN'['$USERNAME'@'$HOSTNAME':'$RED''$WORKING_DIRECTORY']'$NO_COLOR' '
+        PS1=''$PURPLE'['$TIME']'$GREEN'[OK]'$CYAN'['$USERNAME'@'$HOSTNAME':'$RED''$WORKING_DIRECTORY']'$GREEN''$GIT' '$NO_COLOR''
     else
-        PS1=''$PURPLE'['$TIME']'$RED'[ER]'$CYAN'['$USERNAME'@'$HOSTNAME':'$RED''$WORKING_DIRECTORY']'$NO_COLOR' '
+        PS1=''$PURPLE'['$TIME']'$RED'[ER]'$CYAN'['$USERNAME'@'$HOSTNAME':'$RED''$WORKING_DIRECTORY']'$GREEN''$GIT' '$NO_COLOR''
     fi
 }
 
